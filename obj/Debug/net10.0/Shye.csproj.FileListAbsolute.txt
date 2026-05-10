@@ -1,0 +1,14 @@
+D:\Shye\bin\Debug\net10.0\Shye.exe
+D:\Shye\bin\Debug\net10.0\Shye.deps.json
+D:\Shye\bin\Debug\net10.0\Shye.runtimeconfig.json
+D:\Shye\bin\Debug\net10.0\Shye.dll
+D:\Shye\bin\Debug\net10.0\Shye.pdb
+D:\Shye\obj\Debug\net10.0\Shye.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shye\obj\Debug\net10.0\Shye.AssemblyInfoInputs.cache
+D:\Shye\obj\Debug\net10.0\Shye.AssemblyInfo.cs
+D:\Shye\obj\Debug\net10.0\Shye.csproj.CoreCompileInputs.cache
+D:\Shye\obj\Debug\net10.0\Shye.dll
+D:\Shye\obj\Debug\net10.0\refint\Shye.dll
+D:\Shye\obj\Debug\net10.0\Shye.pdb
+D:\Shye\obj\Debug\net10.0\Shye.genruntimeconfig.cache
+D:\Shye\obj\Debug\net10.0\ref\Shye.dll

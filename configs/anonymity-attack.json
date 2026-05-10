@@ -1,0 +1,64 @@
+{
+  "experiment": "anonymity-attack",
+  "protocols": ["shye", "fixed_path_onion", "random_walk", "flooding"],
+  "seeds": [1, 2, 3, 4, 5],
+  "topologies": ["random"],
+  "network": {
+    "nodeCounts": [100],
+    "averageDegrees": [8],
+    "baseDelayMs": 20,
+    "jitterMs": 10,
+    "lossProbabilities": [0.0]
+  },
+  "traffic": {
+    "simulationDurationMs": 60000,
+    "maxTailMs": 20000,
+    "lambdaMsg": 0.2,
+    "lambdaCover": 0.02,
+    "stateSampleIntervalMs": 5000,
+    "realPacketBytes": 1024,
+    "coverPacketBytes": 256,
+    "maxEvents": 2000000
+  },
+  "shye": {
+    "ttlValues": [5],
+    "floodDepth": 3,
+    "heartbeatMs": 1000,
+    "tauSettleMs": 50,
+    "overlapWindowMs": 300,
+    "commitRevealDelayMs": 25,
+    "witnessF": 1,
+    "rendezvousF": 1
+  },
+  "adversary": {
+    "alphaValues": [0.0, 0.1, 0.2, 0.3],
+    "observerModes": ["local", "regional", "broad"],
+    "identityMultiplier": 3.0,
+    "grindingAttempts": 3,
+    "maliciousDropProbability": 0.0,
+    "maliciousDelayMs": 0.0
+  },
+  "ablation": {
+    "disableCommitReveal": false,
+    "disableDedup": false,
+    "disableWinnerCert": false,
+    "disableLinkProof": false,
+    "disableRerandomization": false,
+    "enableStableRouteTag": false,
+    "disableTtl": false
+  },
+  "cryptoCost": {
+    "winnerCertVerifyMs": 0.2,
+    "winnerCertBytes": 96,
+    "linkProofVerifyMs": 1.0,
+    "linkProofBytes": 512,
+    "thresholdDecryptMs": 2.0,
+    "thresholdDecryptBytes": 256,
+    "forwarderSignatureBytes": 64
+  },
+  "output": {
+    "directory": "results/raw",
+    "writeEvents": false,
+    "writeNodeState": true
+  }
+}
